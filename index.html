@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Solar Cleaning | Nashik's Premier Solar Maintenance</title>
+    
+    <!-- Fonts: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        solar: {
+                            blue: '#0F172A',     /* Deep Navy/Black */
+                            accent: '#0EA5E9',   /* Sky Blue */
+                            yellow: '#F59E0B',   /* Solar Gold */
+                            light: '#F8FAFC',    /* Ultra Light Blue/White */
+                            grey: '#64748B'      /* Muted Text */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        
+        /* Image Hover Zoom */
+        .img-zoom-container { overflow: hidden; }
+        .img-zoom { transition: transform 0.7s ease; }
+        .group:hover .img-zoom { transform: scale(1.05); }
+    </style>
+</head>
+<body class="font-sans text-slate-900 bg-white antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex flex-col leading-none">
+                <span class="font-bold text-xl tracking-tight text-solar-blue">POWER</span>
+                <span class="text-[10px] font-semibold tracking-widest text-solar-accent uppercase">Solar Cleaning</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
+                <a href="#process" class="hover:text-solar-accent transition-colors">Process</a>
+                <a href="#services" class="hover:text-solar-accent transition-colors">Services</a>
+                <a href="#gallery" class="hover:text-solar-accent transition-colors">Projects</a>
+                <a href="#testimonials" class="hover:text-solar-accent transition-colors">Reviews</a>
+            </div>
+            <a href="#contact" class="hidden md:inline-flex items-center gap-2 bg-solar-blue text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-solar-accent transition-all duration-300">
+                Book Inspection
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <button class="md:hidden text-slate-800"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO (Image: Workers on Roof) -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="WhatsApp%20Image%202026-01-27%20at%208.04.32%20PM.jpeg" 
+                 alt="Solar Cleaning Team on Roof" 
+                 class="w-full h-full object-cover">
+            <!-- Overlay for text readability -->
+            <div class="absolute inset-0 bg-slate-900/70"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 w-full grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8 fade-in-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white mb-4">
+                    <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                    <span class="text-xs font-bold tracking-wide uppercase">Serving Nashik & Surrounding Areas</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight text-white">
+                    Complete Solar & <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-solar-accent to-white">Roof Care</span>
+                </h1>
+                
+                <p class="text-lg text-slate-200 max-w-xl font-medium delay-100 fade-in-up leading-relaxed">
+                    From solar panel cleaning to bird proofing and pressure washing. We protect your residential and commercial assets across Nashik.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 pt-4 delay-200 fade-in-up">
+                    <a href="#contact" class="px-8 py-4 bg-solar-accent text-white rounded-lg font-bold hover:bg-sky-400 transition-all flex items-center justify-center gap-2">
+                        Get Free Quote
+                        <i data-lucide="zap" class="w-5 h-5"></i>
+                    </a>
+                    <a href="tel:+919890000000" class="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-lg font-bold hover:bg-white/20 transition-colors flex items-center justify-center gap-2">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Floating Stats (Hidden on mobile) -->
+            <div class="hidden lg:block fade-in-up delay-200 justify-self-end">
+                <div class="bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-2xl max-w-sm text-white">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-300">Complete Protection</p>
+                            <p class="text-2xl font-bold">Cleaning & Proofing</p>
+                        </div>
+                    </div>
+                    <div class="h-px bg-white/10 my-4"></div>
+                    <p class="text-sm text-slate-300 italic">"We don't just clean; we protect your roof from birds and debris."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: TRUST STATS -->
+    <section class="py-12 border-b border-slate-100 bg-white relative z-20 -mt-8 rounded-t-3xl md:rounded-none md:mt-0">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:divide-x divide-slate-100">
+                <div class="text-center md:text-left md:pl-8">
+                    <h3 class="text-4xl font-bold text-solar-blue mb-1">200+</h3>
+                    <p class="text-sm font-semibold text-slate-500 uppercase">Homes Serviced</p>
+                </div>
+                <div class="text-center md:text-left md:pl-8">
+                    <h3 class="text-4xl font-bold text-solar-blue mb-1">Nashik</h3>
+                    <p class="text-sm font-semibold text-slate-500 uppercase">Local Experts</p>
+                </div>
+                <div class="text-center md:text-left md:pl-8">
+                    <h3 class="text-4xl font-bold text-solar-blue mb-1">100%</h3>
+                    <p class="text-sm font-semibold text-slate-500 uppercase">Safety Record</p>
+                </div>
+                <div class="text-center md:text-left md:pl-8 flex flex-col justify-center">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-1">
+                        <i data-lucide="award" class="text-solar-accent w-6 h-6"></i>
+                        <span class="font-bold text-lg text-solar-blue">Professional</span>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-500 uppercase">Res & Commercial</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: SERVICES (Updated to 3 Cards highlighting core requests) -->
+    <section id="services" class="py-24 bg-solar-light">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-solar-accent font-bold tracking-wider uppercase text-sm">Our Expertise</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 text-solar-blue">Comprehensive Maintenance Solutions</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1: Solar Cleaning -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="h-56 overflow-hidden relative">
+                        <!-- Image: Rooftop Sunset -->
+                        <img src="WhatsApp%20Image%202026-01-27%20at%208.04.24%20PM.jpeg" 
+                             alt="Residential Solar" 
+                             class="w-full h-full object-cover img-zoom">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Solar Panel Cleaning</h3>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">For both Residential & Commercial systems. We remove dust, pollen, and pollution to maximize your energy production.</p>
+                        <ul class="space-y-2 text-sm text-slate-500 mb-6">
+                            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Soft-Brush Technology</li>
+                            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Efficiency Reports</li>
+                        </ul>
+                        <a href="#contact" class="text-solar-accent font-semibold text-sm hover:underline">Get Cleaning Quote &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Bird Proofing -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="h-56 overflow-hidden relative">
+                        <!-- Image: Solar Farm (Used as placeholder for structure) -->
+                        <img src="WhatsApp%20Image%202026-01-27%20at%208.04.28%20PM%20(1).jpeg" 
+                             alt="Industrial Solar Farm" 
+                             class="w-full h-full object-cover img-zoom">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Bird Proofing</h3>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Prevent birds from nesting under your panels. Our durable mesh installation protects wiring and prevents corrosive droppings.</p>
+                        <ul class="space-y-2 text-sm text-slate-500 mb-6">
+                            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Durable Mesh Barriers</li>
+                            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Protects Wiring</li>
+                        </ul>
+                        <a href="#contact" class="text-solar-accent font-semibold text-sm hover:underline">Get Proofing Quote &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Exterior Care -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="h-56 overflow-hidden relative">
+                        <!-- Image: Wet/Clean Close up -->
+                        <img src="WhatsApp%20Image%202026-01-27%20at%207.10.38%20PM.jpeg" 
+                             alt="Pressure Washing" 
+                             class="w-full h-full object-cover img-zoom">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Pressure Wash & Gutters</h3>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Complete exterior maintenance. We clean clogged gutters and pressure wash driveways, walkways, and walls.</p>
+                        <ul class="space-y-2 text-sm text-slate-500 mb-6">
+                            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> High-Pressure Cleaning</li>
+                            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Debris Removal</li>
+                        </ul>
+                        <a href="#contact" class="text-solar-accent font-semibold text-sm hover:underline">View Maintenance Plans &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: PROCESS -->
+    <section id="process" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <!-- Image Side (Sticky for better UX) -->
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl img-zoom-container order-2 lg:order-1 lg:sticky lg:top-32 h-[600px]">
+                    <!-- Image: Worker Scrubbing/Foam -->
+                    <img src="WhatsApp%20Image%202026-01-27%20at%208.04.25%20PM.jpeg" 
+                         alt="Foam Cleaning Process" 
+                         class="w-full h-full object-cover img-zoom">
+                    
+                    <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-6 rounded-xl border border-white shadow-lg z-10">
+                        <div class="flex gap-4 items-start">
+                            <div class="bg-green-100 text-green-600 p-3 rounded-lg">
+                                <i data-lucide="leaf" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-solar-blue">Eco-Safe Chemistry</h4>
+                                <p class="text-xs text-slate-600 mt-1">Our biodegradable agents lift carbon soot without damaging the anti-reflective coating.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="space-y-10 order-1 lg:order-2">
+                    <div>
+                        <span class="text-solar-accent font-bold tracking-wider uppercase text-sm">The Protocol</span>
+                        <h2 class="text-3xl md:text-4xl font-bold mt-3 text-solar-blue">The 6-Step Power Wash</h2>
+                        <p class="text-slate-600 mt-4 leading-relaxed font-medium">
+                            Solar cleaning is electrical maintenance, not janitorial work. We follow a strict protocol to ensure safety and performance.
+                        </p>
+                    </div>
+
+                    <!-- Steps List (Vertical 1-2-3-4-5-6) -->
+                    <div class="space-y-6">
+                        <!-- Step 01 -->
+                        <div class="flex gap-5 group">
+                            <div class="flex flex-col items-center">
+                                <div class="w-12 h-12 rounded-full bg-solar-blue text-white flex items-center justify-center flex-shrink-0 font-bold shadow-lg group-hover:bg-solar-accent transition-colors">01</div>
+                                <div class="h-full w-0.5 bg-slate-100 my-2"></div>
+                            </div>
+                            <div class="pb-6">
+                                <h4 class="font-bold text-lg text-solar-blue group-hover:text-solar-accent transition-colors">Health Audit</h4>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">We scan the array for hot-spots, micro-cracks, and loose cabling before applying any water.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 02 -->
+                        <div class="flex gap-5 group">
+                            <div class="flex flex-col items-center">
+                                <div class="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-400 flex items-center justify-center flex-shrink-0 font-bold group-hover:border-solar-accent group-hover:text-solar-accent transition-colors">02</div>
+                                <div class="h-full w-0.5 bg-slate-100 my-2"></div>
+                            </div>
+                            <div class="pb-6">
+                                <h4 class="font-bold text-lg text-solar-blue group-hover:text-solar-accent transition-colors">Ion-Wash</h4>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">Application of de-ionized water to neutralize static charge and loosen surface dust.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 03 -->
+                        <div class="flex gap-5 group">
+                            <div class="flex flex-col items-center">
+                                <div class="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-400 flex items-center justify-center flex-shrink-0 font-bold group-hover:border-solar-accent group-hover:text-solar-accent transition-colors">03</div>
+                                <div class="h-full w-0.5 bg-slate-100 my-2"></div>
+                            </div>
+                            <div class="pb-6">
+                                <h4 class="font-bold text-lg text-solar-blue group-hover:text-solar-accent transition-colors">Soft-Scrub</h4>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">Gentle mechanical cleaning using rotating soft brushes and PH-neutral biodegradable soap.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 04 -->
+                        <div class="flex gap-5 group">
+                            <div class="flex flex-col items-center">
+                                <div class="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-400 flex items-center justify-center flex-shrink-0 font-bold group-hover:border-solar-accent group-hover:text-solar-accent transition-colors">04</div>
+                                <div class="h-full w-0.5 bg-slate-100 my-2"></div>
+                            </div>
+                            <div class="pb-6">
+                                <h4 class="font-bold text-lg text-solar-blue group-hover:text-solar-accent transition-colors">Deep-Target</h4>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">Focused removal of stubborn bird droppings, lichen, and industrial soot deposits.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 05 -->
+                        <div class="flex gap-5 group">
+                            <div class="flex flex-col items-center">
+                                <div class="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-400 flex items-center justify-center flex-shrink-0 font-bold group-hover:border-solar-accent group-hover:text-solar-accent transition-colors">05</div>
+                                <div class="h-full w-0.5 bg-slate-100 my-2"></div>
+                            </div>
+                            <div class="pb-6">
+                                <h4 class="font-bold text-lg text-solar-blue group-hover:text-solar-accent transition-colors">Pure-Rinse</h4>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">Final rinse with purified water to ensure a zero-spot, streak-free glass finish.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 06 -->
+                        <div class="flex gap-5 group">
+                            <div class="flex flex-col items-center">
+                                <div class="w-12 h-12 rounded-full bg-white border-2 border-slate-100 text-slate-400 flex items-center justify-center flex-shrink-0 font-bold group-hover:border-solar-accent group-hover:text-solar-accent transition-colors">06</div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-solar-blue group-hover:text-solar-accent transition-colors">Yield Audit</h4>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">We verify the immediate jump in power output at the inverter level.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: GALLERY (Recent Projects) - Moved Here -->
+    <section id="gallery" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <span class="text-solar-accent font-bold tracking-wider uppercase text-sm">Portfolio</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-3 text-white">Recent Projects</h2>
+                </div>
+                <a href="#contact" class="hidden md:inline-flex text-sm font-semibold text-solar-accent hover:text-white transition-colors">View All Works &rarr;</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 h-[600px] md:h-[400px]">
+                <!-- Item 1: Wide Farm (Spans 2 cols) -->
+                <div class="md:col-span-2 relative group overflow-hidden rounded-xl bg-slate-800">
+                    <img src="WhatsApp%20Image%202026-01-27%20at%207.10.34%20PM.jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" alt="Solar Farm Side View">
+                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/80 to-transparent w-full">
+                        <span class="text-xs font-bold text-solar-yellow uppercase">Industrial</span>
+                        <h4 class="font-bold text-lg">Ambad MIDC Maintenance</h4>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="relative group overflow-hidden rounded-xl bg-slate-800">
+                    <img src="WhatsApp%20Image%202026-01-27%20at%208.04.17%20PM.jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" alt="Deep Cleaning">
+                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/80 to-transparent w-full">
+                         <span class="text-xs font-bold text-solar-accent uppercase">Process</span>
+                        <h4 class="font-bold text-lg">Bird Proofing & Clean</h4>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="relative group overflow-hidden rounded-xl bg-slate-800">
+                     <img src="WhatsApp%20Image%202026-01-27%20at%208.04.13%20PM%20(1).jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" alt="Clean Rooftop">
+                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/80 to-transparent w-full">
+                         <span class="text-xs font-bold text-green-400 uppercase">Result</span>
+                        <h4 class="font-bold text-lg">Gangapur Rd Rooftop</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: TESTIMONIALS -->
+    <section id="testimonials" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-solar-accent font-bold tracking-wider uppercase text-sm">Success Stories</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 text-solar-blue">Trusted by Nashik's Leaders</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl relative">
+                    <div class="text-solar-yellow mb-4">
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">"The bird proofing mesh they installed is excellent. No more pigeons nesting under my panels on College Road. And the cleaning made a huge difference."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold">AP</div>
+                        <div>
+                            <p class="font-bold text-solar-blue text-sm">Amit Patil</p>
+                            <p class="text-xs text-slate-400">Gangapur Road Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl relative">
+                    <div class="text-solar-yellow mb-4">
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">"We used them for pressure washing our factory driveway and cleaning the solar setup. Power Solar is very professional. Best service in Ambad MIDC."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold">RJ</div>
+                        <div>
+                            <p class="font-bold text-solar-blue text-sm">Rajesh Jadhav</p>
+                            <p class="text-xs text-slate-400">Factory Manager, Ambad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl relative">
+                    <div class="text-solar-yellow mb-4">
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 inline fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">"They also cleaned our gutters while doing the solar panels. It's great to have one company handle all the exterior cleaning tasks. Very convenient."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold">SK</div>
+                        <div>
+                            <p class="font-bold text-solar-blue text-sm">Suresh Kulkarni</p>
+                            <p class="text-xs text-slate-400">Society Chairman, Satpur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: FAQ -->
+    <section class="py-24 bg-solar-light">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-solar-blue">Expert Insights</h2>
+                <p class="text-slate-500 mt-2">Answers to your technical questions.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm cursor-pointer hover:shadow-md transition-all">
+                    <h3 class="font-bold text-solar-blue flex justify-between items-center">
+                        How often should I clean my solar panels?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-solar-grey"></i>
+                    </h3>
+                    <p class="text-slate-600 mt-2 text-sm">We recommend cleaning every 3 months (quarterly). In dusty industrial areas like Ambad/Satpur MIDC, monthly cleaning might be required.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm cursor-pointer hover:shadow-md transition-all">
+                    <h3 class="font-bold text-solar-blue flex justify-between items-center">
+                        Why do I need bird proofing?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-solar-grey"></i>
+                    </h3>
+                    <p class="text-slate-600 mt-2 text-sm">Birds love nesting under solar panels. Their droppings are acidic and can damage panels, while nests can cause overheating and fire risks. Our proofing mesh prevents this.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm cursor-pointer hover:shadow-md transition-all">
+                    <h3 class="font-bold text-solar-blue flex justify-between items-center">
+                        What else do you clean?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-solar-grey"></i>
+                    </h3>
+                    <p class="text-slate-600 mt-2 text-sm">Besides solar panels, we offer gutter cleaning to prevent water damage and pressure washing for driveways, patios, and industrial floors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: CONTACT CTA & FORM -->
+    <section id="contact" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Info Side -->
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-solar-blue mb-6">Ready to Optimize Your Output?</h2>
+                    <p class="text-slate-500 text-lg mb-10">Send us a photo of your roof on WhatsApp for an instant estimate, or fill out the form for a formal quotation.</p>
+                    
+                    <div class="flex flex-col gap-4 mb-12">
+                        <button class="w-full sm:w-auto px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-lg font-bold text-lg shadow-lg shadow-green-900/20 transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i>
+                            WhatsApp: +91 98900 00000
+                        </button>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-slate-100 p-3 rounded-full text-solar-blue flex-shrink-0"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="font-bold text-solar-blue">Headquarters</h4>
+                                <p class="text-sm text-slate-500">Nashik, Maharashtra</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-slate-100 p-3 rounded-full text-solar-blue flex-shrink-0"><i data-lucide="map" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="font-bold text-solar-blue">Service Area</h4>
+                                <p class="text-sm text-slate-500">Nashik City, Ambad, Satpur, Sinnar MIDC</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-slate-100 p-3 rounded-full text-solar-blue flex-shrink-0"><i data-lucide="mail" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="font-bold text-solar-blue">Email Us</h4>
+                                <p class="text-sm text-slate-500">clean@powersolar.in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 shadow-lg">
+                    <h3 class="text-2xl font-bold text-solar-blue mb-6">Get a Free Quote</h3>
+                    <form id="submit-form" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Your Name</label>
+                            <input name="Name" type="text" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-solar-accent focus:ring-2 focus:ring-solar-accent/20 outline-none transition-all" placeholder="Enter your name" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Phone Number</label>
+                            <input name="Phone" type="tel" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-solar-accent focus:ring-2 focus:ring-solar-accent/20 outline-none transition-all" placeholder="Enter your mobile number" required>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Service Needed</label>
+                                <select name="Service" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-solar-accent focus:ring-2 focus:ring-solar-accent/20 outline-none transition-all bg-white">
+                                    <option>Solar Cleaning</option>
+                                    <option>Bird Proofing</option>
+                                    <option>Gutter Cleaning</option>
+                                    <option>Pressure Washing</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Property Type</label>
+                                <select name="Property" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-solar-accent focus:ring-2 focus:ring-solar-accent/20 outline-none transition-all bg-white">
+                                    <option>Residential</option>
+                                    <option>Commercial</option>
+                                    <option>Industrial</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Message (Optional)</label>
+                            <textarea name="Message" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-solar-accent focus:ring-2 focus:ring-solar-accent/20 outline-none transition-all h-24" placeholder="Tell us about your requirements"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-solar-blue text-white font-bold rounded-lg hover:bg-slate-800 transition-colors shadow-lg">
+                            Submit Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm">
+            <p>&copy; 2024 Power Solar Cleaning. All rights reserved.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // --- WHATSAPP INQUIRY INTEGRATION ---
+        const form = document.getElementById('submit-form');
+        
+        if(form){
+            form.addEventListener('submit', e => {
+                e.preventDefault(); // Prevent default page refresh
+                
+                // 1. Collect values from existing fields
+                const name = form.querySelector('[name="Name"]').value.trim();
+                const phone = form.querySelector('[name="Phone"]').value.trim();
+                const service = form.querySelector('[name="Service"]').value;
+                const property = form.querySelector('[name="Property"]').value;
+                const message = form.querySelector('[name="Message"]').value.trim();
+
+                // 2. Basic Indian Mobile Validation (10 digits, starts with 6-9)
+                const phoneRegex = /^[6-9]\d{9}$/;
+                if (!phoneRegex.test(phone)) {
+                    alert("Please enter a valid 10-digit Indian mobile number.");
+                    return;
+                }
+
+                // 3. Construct WhatsApp Message Text
+                const msg = `*New Inquiry*\n` +
+                            `Name: ${name}\n` +
+                            `Phone: ${phone}\n` +
+                            `Service: ${service}\n` +
+                            `Property Type: ${property}\n` +
+                            `Message: ${message}`;
+
+                // 4. WhatsApp URL Construction
+                // REPLACE THIS NUMBER with the business owner's WhatsApp number (format: 91XXXXXXXXXX)
+                const ownerPhone = "919890000000"; 
+                
+                const url = `https://wa.me/${ownerPhone}?text=${encodeURIComponent(msg)}`;
+
+                // 5. Open WhatsApp
+                window.open(url, '_blank');
+                
+                // Optional: Reset form
+                form.reset();
+            })
+        }
+    </script>
+</body>
+</html>
