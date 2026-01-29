@@ -69,19 +69,52 @@
                 <img src="logo.png" alt="Power Solar Cleaning" class="h-full w-auto object-contain">
             </a>
 
-            <div class="hidden lg:flex gap-8 text-sm font-bold text-solar-blue">
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-8 text-sm font-bold text-solar-blue">
                 <a href="#process" class="hover:text-solar-accent transition-colors uppercase tracking-wide">Process</a>
                 <a href="#services" class="hover:text-solar-accent transition-colors uppercase tracking-wide">Services</a>
                 <a href="#gallery" class="hover:text-solar-accent transition-colors uppercase tracking-wide">Projects</a>
                 <a href="#testimonials" class="hover:text-solar-accent transition-colors uppercase tracking-wide">Reviews</a>
             </div>
             
-            <a href="#contact" class="hidden lg:inline-flex items-center gap-2 bg-solar-blue text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg shadow-sky-900/20 hover:bg-solar-dark hover:shadow-sky-900/30 transition-all duration-300 transform hover:-translate-y-0.5">
-                Book Inspection
-                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
+            <!-- Desktop Right Side -->
+            <div class="hidden lg:flex items-center gap-4">
+                <!-- Social Links in Header -->
+                <div class="flex gap-3 border-r border-solar-blue/20 pr-4">
+                    <a href="https://www.facebook.com/share/1ByzA1NwGP/" target="_blank" class="text-solar-blue hover:text-solar-accent transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                    <a href="https://www.instagram.com/power.solar.cleaning.nashik?igsh=b3dwcGZvZ3MzcnNq" target="_blank" class="text-solar-blue hover:text-solar-accent transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="https://youtube.com/@powersolarnashik?si=wawQ9AbO128HRPSB" target="_blank" class="text-solar-blue hover:text-solar-accent transition-colors"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                </div>
+
+                <a href="#contact" class="inline-flex items-center gap-2 bg-solar-blue text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg shadow-sky-900/20 hover:bg-solar-dark hover:shadow-sky-900/30 transition-all duration-300 transform hover:-translate-y-0.5">
+                    Book Inspection
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
             
-            <button class="lg:hidden text-solar-blue p-2"><i data-lucide="menu" class="w-8 h-8"></i></button>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-solar-blue p-2 focus:outline-none">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown (Hidden by default) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-sky-100 border-t border-sky-300 shadow-xl absolute w-full left-0 top-32 flex flex-col p-6 gap-4 animate-fade-in-down origin-top">
+            <a href="#process" class="text-solar-blue font-bold text-lg hover:text-solar-accent py-2 border-b border-sky-200">Process</a>
+            <a href="#services" class="text-solar-blue font-bold text-lg hover:text-solar-accent py-2 border-b border-sky-200">Services</a>
+            <a href="#gallery" class="text-solar-blue font-bold text-lg hover:text-solar-accent py-2 border-b border-sky-200">Projects</a>
+            <a href="#testimonials" class="text-solar-blue font-bold text-lg hover:text-solar-accent py-2 border-b border-sky-200">Reviews</a>
+            
+            <div class="flex gap-6 py-2 justify-center">
+                 <a href="https://www.facebook.com/share/1ByzA1NwGP/" target="_blank" class="text-solar-blue hover:text-solar-accent transition-colors"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                 <a href="https://www.instagram.com/power.solar.cleaning.nashik?igsh=b3dwcGZvZ3MzcnNq" target="_blank" class="text-solar-blue hover:text-solar-accent transition-colors"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                 <a href="https://youtube.com/@powersolarnashik?si=wawQ9AbO128HRPSB" target="_blank" class="text-solar-blue hover:text-solar-accent transition-colors"><i data-lucide="youtube" class="w-6 h-6"></i></a>
+            </div>
+
+            <a href="#contact" class="flex items-center justify-center gap-2 bg-solar-blue text-white px-6 py-4 rounded-lg text-lg font-bold shadow-md hover:bg-solar-dark transition-colors">
+                Book Inspection
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
         </div>
     </nav>
 
@@ -100,7 +133,8 @@
             <div class="space-y-8 fade-in-up">
                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white mb-4">
                     <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                    <span class="text-xs font-bold tracking-wide uppercase">Serving Nashik & Satpur</span>
+                    <!-- UPDATED: Added MW Service Area Info -->
+                    <span class="text-xs font-bold tracking-wide uppercase">Nashik (Res/Comm) • All Maharashtra (MW Projects)</span>
                 </div>
                 
                 <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight text-white">
@@ -109,7 +143,7 @@
                 </h1>
                 
                 <p class="text-lg text-sky-50 max-w-xl font-medium delay-100 fade-in-up leading-relaxed">
-                    From solar panel cleaning to bird proofing and pressure washing. We protect your residential and commercial assets across Nashik.
+                    From solar panel cleaning to bird proofing and pressure washing. We protect your residential and commercial assets across Nashik, and Utility MW projects across Maharashtra.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 pt-4 delay-200 fade-in-up">
@@ -117,9 +151,9 @@
                         Get Free Quote
                         <i data-lucide="zap" class="w-5 h-5 text-solar-yellow"></i>
                     </a>
-                    <a href="tel:+917558249521" class="px-8 py-4 bg-solar-blue/50 backdrop-blur-md text-white border border-white/30 rounded-lg font-bold hover:bg-solar-blue/70 transition-colors flex items-center justify-center gap-2">
+                    <a href="tel:+917776000228" class="px-8 py-4 bg-solar-blue/50 backdrop-blur-md text-white border border-white/30 rounded-lg font-bold hover:bg-solar-blue/70 transition-colors flex items-center justify-center gap-2">
                         <i data-lucide="phone" class="w-4 h-4"></i>
-                        +91 75582 49521
+                        +91 77760 00228
                     </a>
                 </div>
             </div>
@@ -329,7 +363,7 @@
                         <!-- Step 03 -->
                         <div class="flex gap-5 group">
                             <div class="flex flex-col items-center">
-                                <div class="w-12 h-12 rounded-full bg-white border-2 border-sky-100 text-slate-400 flex items-center justify-center flex-shrink-0 font-bold group-hover:border-solar-blue group-hover:text-solar-blue transition-colors">03</div>
+                                <div class="w-12 h-12 rounded-full bg-white border-2 border-blue-100 text-slate-400 flex items-center justify-center flex-shrink-0 font-bold group-hover:border-solar-blue group-hover:text-solar-blue transition-colors">03</div>
                                 <div class="h-full w-0.5 bg-slate-100 my-2"></div>
                             </div>
                             <div class="pb-6">
@@ -671,17 +705,78 @@
 
     <!-- FOOTER -->
     <footer class="bg-solar-blue text-white py-12 border-t border-sky-900">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm">
-            <p>&copy; 2024 Power Solar Cleaning Services. All rights reserved.</p>
-            <div class="flex gap-6 mt-4 md:mt-0">
-                <a href="#" class="hover:text-sky-200 transition-colors">Privacy Policy</a>
-                <a href="#" class="hover:text-sky-200 transition-colors">Terms of Service</a>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- About -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <h4 class="font-extrabold text-2xl tracking-tighter">POWER SOLAR</h4>
+                    </div>
+                    <p class="text-sky-200 text-sm leading-relaxed max-w-sm">
+                        Nashik's premier solar maintenance experts. We ensure your renewable energy investments perform at 100% capacity through professional cleaning and protection services.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-sky-200">
+                        <li><a href="#services" class="hover:text-white transition-colors">Our Services</a></li>
+                        <li><a href="#process" class="hover:text-white transition-colors">Our Process</a></li>
+                        <li><a href="#gallery" class="hover:text-white transition-colors">Recent Projects</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Connect With Us</h4>
+                    <div class="flex gap-4 mb-4">
+                        <a href="https://www.facebook.com/share/1ByzA1NwGP/" target="_blank" class="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="https://www.instagram.com/power.solar.cleaning.nashik?igsh=b3dwcGZvZ3MzcnNq" target="_blank" class="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="https://youtube.com/@powersolarnashik?si=wawQ9AbO128HRPSB" target="_blank" class="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                    </div>
+                    <p class="text-xs text-sky-300">Follow us for maintenance tips and updates.</p>
+                </div>
+            </div>
+
+            <div class="border-t border-sky-900 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 Power Solar Cleaning Services. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-sky-200 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-sky-200 transition-colors">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>
         lucide.createIcons();
+
+        // --- MOBILE MENU TOGGLE ---
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if(mobileBtn && mobileMenu){
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                
+                // Optional: Change icon when open
+                const icon = mobileBtn.querySelector('svg');
+                if(mobileMenu.classList.contains('hidden')){
+                    // Menu is closed, show hamburger
+                    // Lucide icons are replaced on load, so we might need to re-render or just simple toggle logic
+                    // For simplicity, we stick to standard toggle behavior
+                }
+            });
+
+            // Close menu when clicking a link
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
 
         // --- WHATSAPP INQUIRY INTEGRATION ---
         const form = document.getElementById('submit-form');
